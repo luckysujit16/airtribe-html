@@ -72,12 +72,19 @@ body {
   padding: 25px;
   text-align: center;
   font-size: medium;
+  display: inline;
 }
 
 .services div {
   display: inline-flex;
   margin: 2%;
   padding: 20px;
+}
+
+.services-box {
+  display: flex;
+  width: 100%;
+  text-align: center;
 }
 
 .contact {
@@ -114,6 +121,7 @@ form input {
 
 form textarea {
   height: auto;
+  width: 80%;
   font-size: 1.2rem;
   background-color: #e1e1e1;
   margin: 2%;
@@ -195,14 +203,15 @@ section {
 
 figure {
   padding: 25px;
+  width: 100%;
 }
 
 figure img {
-  width: 450px;
+  width: 100%;
 }
 
 figcaption {
-  font-size: larger;
+  font-size: 1rem;
   font-weight: 800;
   padding: 15px;
 }
