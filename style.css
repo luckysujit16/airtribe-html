@@ -82,8 +82,8 @@ body {
 }
 
 .services-box {
-  display: flex;
-  width: 100%;
+  display: inline-block;
+  width: 33%;
   text-align: center;
 }
 
