@@ -87,6 +87,12 @@ body {
   text-align: center;
 }
 
+.about-box {
+  display: flex;
+  width: 100%;
+  text-align: center;
+}
+
 .contact {
   padding: 25px;
   text-align: center;
