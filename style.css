@@ -12,6 +12,11 @@ footer {
   padding: 20px;
 }
 
+nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 button {
   width: 150px;
   background-color: #878787;
@@ -50,18 +55,15 @@ body {
 
 .about {
   padding: 25px;
-
   text-align: center;
   font-size: medium;
-}
-
-.about div {
-  display: inline-flex;
+  display: flex;
   text-align: justify;
 }
 
 .about img {
   width: 100%;
+  max-height: 450px;
 }
 
 #about {
@@ -72,25 +74,25 @@ body {
   padding: 25px;
   text-align: center;
   font-size: medium;
-  display: inline;
+  display: flex;
 }
 
-.services div {
-  display: inline-flex;
-  margin: 2%;
+/* .services div {
   padding: 20px;
-}
+} */
 
 .services-box {
-  display: inline-block;
   width: 100%;
   text-align: center;
+  flex-wrap: wrap;
 }
 
 .about-box {
   display: flex;
-  width: 100%;
-  text-align: center;
+  padding: 20px;
+  text-align: justify;
+  justify-content: space-evenly;
+  width: -webkit-fill-available;
 }
 
 .contact {
@@ -190,7 +192,6 @@ a:hover {
 }
 
 .logo {
-  display: inline-flex;
   margin-left: 3%;
 }
 
@@ -208,8 +209,8 @@ section {
 }
 
 figure {
-  padding: 25px;
-  width: 100%;
+  width: 33%;
+  padding: 10px;
 }
 
 figure img {
