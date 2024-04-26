@@ -33,6 +33,7 @@ button {
   padding: 35px;
   text-align: justify;
   margin: 0px;
+  display: block;
 }
 
 button :hover {
@@ -63,8 +64,11 @@ body {
   padding: 25px;
   text-align: center;
   font-size: medium;
-  display: flex;
   text-align: justify;
+}
+
+.flex {
+  display: flex;
 }
 
 .about img {
@@ -76,6 +80,9 @@ body {
   background-color: #f0f8ff;
 }
 
+#about img {
+  width: 100%;
+}
 .services {
   padding: 25px;
   text-align: center;
@@ -87,6 +94,10 @@ body {
   padding: 20px;
 } */
 
+/* div {
+  display: flex;
+} */
+
 .services-box {
   width: 100%;
   text-align: center;
@@ -94,11 +105,12 @@ body {
 }
 
 .about-box {
-  display: flex;
   padding: 20px;
   text-align: justify;
   justify-content: space-evenly;
-  width: -webkit-fill-available;
+  flex-grow: 1;
+  display: flex;
+  width: 50%;
 }
 
 .contact {
@@ -167,7 +179,7 @@ form button {
 h2 {
   font-size: 2.25em;
   text-align: center;
-  padding-bottom: 35px;
+  padding: inherit;
 }
 
 /* Style for the navigation menu */
