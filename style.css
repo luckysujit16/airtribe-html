@@ -29,6 +29,12 @@ button {
   color: #ffffff;
 }
 
+.title {
+  padding: 35px;
+  text-align: justify;
+  margin: 0px;
+}
+
 button :hover {
   width: 150px;
   background-color: #dddddd;
@@ -214,15 +220,39 @@ figure {
 }
 
 figure img {
-  width: 100%;
+  width: -webkit-fill-available;
+  overflow: hidden;
+  border-radius: 0.5em;
+  border: 5px solid rgba(255, 255, 255, 0.05);
+}
+
+figure img:hover {
+  height: 300px;
+  width: 425px;
+
+  transform: scale(
+    1.25
+  ); /* 150% zoom (Note: if the zoom is too large, it will go outside of the viewport) */
+  transition: transform 1.5s, filter 1.5s ease-in-out;
 }
 
 figcaption {
   font-size: 1rem;
   font-weight: 800;
   padding: 15px;
+  margin-top: 5%;
+}
+
+figcaption:hover {
+  font-size: 1.25rem;
+  font-weight: 800;
+  padding: 15px;
+  color: #ffffff;
+  background-color: #7c7c7c;
+  text-transform: capitalize;
 }
 
 figure p {
   text-align: justify;
+  margin-top: 3%;
 }
