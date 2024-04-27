@@ -69,6 +69,9 @@ body {
 
 .flex {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
 }
 
 .about img {
@@ -101,6 +104,30 @@ body {
   display: flex;
 }
 
+.menu {
+  align-items: flex-end;
+}
+
+@media (max-width: 1080px) {
+  .services {
+    flex-direction: column;
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+
+  nav {
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
+
+  button {
+    align-items: center;
+  }
+}
+
 /* .services div {
   padding: 20px;
 } */
@@ -119,7 +146,7 @@ body {
   padding: 35px;
   text-align: justify;
   justify-content: space-evenly;
-  width: 50%;
+  /* width: 50%; */
 }
 
 .contact {
@@ -220,6 +247,8 @@ a:hover {
 
 .logo {
   margin-left: 3%;
+  color: #fff;
+  min-width: 250px;
 }
 
 section {
@@ -236,8 +265,9 @@ section {
 }
 
 figure {
-  width: 33%;
+  width: 100%;
   padding: 35px;
+  max-width: 565px;
 }
 
 figure img {
