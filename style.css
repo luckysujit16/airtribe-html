@@ -17,7 +17,7 @@ nav {
   flex-wrap: wrap;
 }
 
-button {
+.menu button {
   width: 150px;
   background-color: #878787;
   height: 40px;
@@ -76,7 +76,7 @@ body {
 
 .about img {
   width: 100%;
-  max-height: 450px;
+  max-height: 300px;
   box-shadow: 5px 5px 15px 5px #343434;
 }
 
@@ -105,27 +105,50 @@ body {
 }
 
 .menu {
-  align-items: flex-end;
+  width: 100%;
 }
 
-@media (max-width: 1080px) {
-  .services {
-    flex-direction: column;
-  }
+figure {
+  padding: 35px;
+  width: 33%;
+}
 
-  .flex {
-    flex-direction: column;
-  }
+figure img {
+  width: -webkit-fill-available;
+  overflow: hidden;
+  border-radius: 0.5em;
+  border: 5px solid rgba(255, 255, 255, 0.05);
+}
 
-  nav {
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-  }
+figure img:hover {
+  height: 300px;
+  width: 425px;
 
-  button {
-    align-items: center;
-  }
+  transform: scale(
+    1.1
+  ); /* 150% zoom (Note: if the zoom is too large, it will go outside of the viewport) */
+  transition: transform 2s, filter 2s ease-in-out;
+}
+
+figcaption {
+  font-size: 1rem;
+  font-weight: 800;
+  padding: 15px;
+  margin-top: 5%;
+}
+
+figcaption:hover {
+  font-size: 1.25rem;
+  font-weight: 800;
+  padding: 15px;
+  color: #ffffff;
+  background-color: #7c7c7c;
+  text-transform: capitalize;
+}
+
+figure p {
+  text-align: justify;
+  margin-top: 3%;
 }
 
 /* .services div {
@@ -142,11 +165,18 @@ body {
   flex-wrap: wrap;
 }
 
-.about-box {
+.about-box-text {
   padding: 35px;
   text-align: justify;
   justify-content: space-evenly;
-  /* width: 50%; */
+  width: 60%;
+}
+
+.about-box-img {
+  padding: 35px;
+  text-align: justify;
+  justify-content: space-evenly;
+  width: 40%;
 }
 
 .contact {
@@ -264,46 +294,39 @@ section {
   max-height: 560px;
 }
 
-figure {
-  width: 100%;
-  padding: 35px;
-  max-width: 565px;
-}
+@media (max-width: 1080px) {
+  .services {
+    flex-direction: column;
+  }
 
-figure img {
-  width: -webkit-fill-available;
-  overflow: hidden;
-  border-radius: 0.5em;
-  border: 5px solid rgba(255, 255, 255, 0.05);
-}
+  .flex {
+    flex-direction: column;
+  }
 
-figure img:hover {
-  height: 300px;
-  width: 425px;
+  nav {
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
 
-  transform: scale(
-    1.1
-  ); /* 150% zoom (Note: if the zoom is too large, it will go outside of the viewport) */
-  transition: transform 2s, filter 2s ease-in-out;
-}
+  .menu button {
+    align-items: center;
+    width: auto;
+    font-size: 0.85rem;
+    padding: 10px;
+  }
 
-figcaption {
-  font-size: 1rem;
-  font-weight: 800;
-  padding: 15px;
-  margin-top: 5%;
-}
+  figure {
+    width: 100%;
+  }
 
-figcaption:hover {
-  font-size: 1.25rem;
-  font-weight: 800;
-  padding: 15px;
-  color: #ffffff;
-  background-color: #7c7c7c;
-  text-transform: capitalize;
-}
+  .menu ul {
+    display: flex;
+    justify-content: center;
+  }
 
-figure p {
-  text-align: justify;
-  margin-top: 3%;
+  .logo {
+    margin-top: 2%;
+    font-size: 1rem;
+  }
 }
