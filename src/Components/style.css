@@ -1,0 +1,9 @@
+* {
+  box-sizing: border-box;
+}
+p {
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding: 50px;
+}

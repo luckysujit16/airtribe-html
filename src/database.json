@@ -1,0 +1,44 @@
+{
+  "batches": [
+    {
+      "id": "968e",
+      "course": "AngularJs Full Stack Developer",
+      "startDate": "16-04-2024",
+      "timing": "9AM to 10AM",
+      "duration": 75,
+      "trainer": "Sushant"
+    },
+    {
+      "id": "3b0b",
+      "course": "Node Js FullStack Developer",
+      "startDate": "17-04-2024",
+      "timing": "10AM to 11AM",
+      "duration": 75,
+      "trainer": "Pradeep"
+    },
+    {
+      "id": "9aad",
+      "course": "React Js FullStack Developer",
+      "startDate": "20-04-2024",
+      "timing": "1PM to 2PM",
+      "duration": 75,
+      "trainer": "Sujit Jadhav"
+    },
+    {
+      "id": "f4d5",
+      "course": "UI developer",
+      "startDate": "2024-05-07",
+      "timing": "5PM to 6PM",
+      "duration": "80",
+      "trainer": "Amit Bhosale"
+    },
+    {
+      "id": "9783",
+      "course": "React Js Diploma",
+      "startDate": "2024-05-15",
+      "timing": "5PM to 6PM",
+      "duration": "60",
+      "trainer": "Pravin Parab"
+    }
+  ]
+}
